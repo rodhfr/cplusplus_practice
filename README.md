@@ -7,9 +7,9 @@ A pasta /practice/ contém alguns projetos práticos e na raiz está salvo conte
 
 - Exchange de transações de criptomoedas
 
-Conceitos trabalhados:
-1) Ponteiros e Referências
-2) Classes
-3) Métodos básicos Gets/Sets
-4) Construtores e Destrutores
+    Conceitos trabalhados:
+    1) Ponteiros e Referências
+    2) Classes
+    3) Métodos básicos Gets/Sets
+    4) Construtores e Destrutores
 
