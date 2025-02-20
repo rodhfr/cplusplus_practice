@@ -13,3 +13,4 @@ A pasta /practice/ contém alguns projetos práticos e na raiz está salvo conte
     3) Métodos básicos Gets/Sets
     4) Construtores e Destrutores
 
+![carbon(1)](https://github.com/user-attachments/assets/e98c0654-573d-4261-afa7-5f631cb7e059)
