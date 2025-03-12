@@ -1,0 +1,235 @@
+triangle.cpp: In function ‘int main()’:
+triangle.cpp:27:31: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘void’)
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~ ^~ ~~~~~~~~~~~~~~~
+      |          |                                    |
+      |          std::basic_ostream<char>             void
+In file included from /usr/include/c++/14/iostream:41,
+                 from triangle.cpp:3:
+/usr/include/c++/14/ostream:116:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:116:36: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)’ {aka ‘std::basic_ostream<char>& (*)(std::basic_ostream<char>&)’}
+  116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/ostream:125:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]’
+  125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:125:32: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/ostream:135:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  135 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:135:30: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+  135 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/14/ostream:174:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  174 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:174:23: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+  174 |       operator<<(long __n)
+      |                  ~~~~~^~~
+/usr/include/c++/14/ostream:178:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  178 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:178:32: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+  178 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:182:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  182 |       operator<<(bool __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:182:23: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+  182 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from /usr/include/c++/14/ostream:1019:
+/usr/include/c++/14/bits/ostream.tcc:96:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:97:22: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+   97 |     operator<<(short __n)
+      |                ~~~~~~^~~
+/usr/include/c++/14/ostream:189:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  189 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:189:33: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+  189 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+/usr/include/c++/14/bits/ostream.tcc:110:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:111:20: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+  111 |     operator<<(int __n)
+      |                ~~~~^~~
+/usr/include/c++/14/ostream:200:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  200 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:200:31: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+  200 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:209:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  209 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:209:28: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+  209 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:213:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  213 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:213:37: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+  213 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:228:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  228 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:228:25: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+  228 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/14/ostream:232:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  232 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:232:24: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+  232 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+/usr/include/c++/14/ostream:240:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  240 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:240:30: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+  240 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:298:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  298 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:298:30: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+  298 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:303:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]’
+  303 |       operator<<(nullptr_t)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:303:18: note:   no known conversion for argument 1 from ‘void’ to ‘std::nullptr_t’
+  303 |       operator<<(nullptr_t)
+      |                  ^~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:124:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]’
+  124 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:125:34: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  125 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/14/bits/basic_string.h:47,
+                 from /usr/include/c++/14/string:54,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/ostream:40:
+/usr/include/c++/14/string_view:760:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, basic_string_view<_CharT, _Traits>)’
+  760 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/14/string_view:760:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:48: note:   mismatched types ‘std::basic_string_view<_CharT, _Traits>’ and ‘void’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                                ^
+/usr/include/c++/14/bits/basic_string.h:4077:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 4077 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/14/bits/basic_string.h:4077:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:48: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘void’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                                ^
+In file included from /usr/include/c++/14/bits/memory_resource.h:38,
+                 from /usr/include/c++/14/string:68:
+/usr/include/c++/14/cstddef:125:5: note: candidate: ‘template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator<<(byte, _IntegerType)’
+  125 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/14/cstddef:125:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:10: note:   cannot convert ‘std::operator<< <char_traits<char> >(std::cout, ((const char*)"Triangle type: "))’ (type ‘std::basic_ostream<char>’) to type ‘std::byte’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/14/bits/ios_base.h:46:
+/usr/include/c++/14/system_error:339:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)’
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/14/system_error:339:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘const std::error_code&’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:560:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)’
+  560 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:560:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:48: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                                ^
+/usr/include/c++/14/ostream:570:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)’
+  570 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:570:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘char’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:576:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)’
+  576 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:576:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘char’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:587:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)’
+  587 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:587:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘signed char’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:592:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)’
+  592 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:592:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘unsigned char’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:651:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)’
+  651 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:651:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:48: note:   mismatched types ‘const _CharT*’ and ‘void’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                                ^
+/usr/include/c++/14/bits/ostream.tcc:307:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)’
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘const char*’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:668:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)’
+  668 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:668:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘const char*’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:681:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)’
+  681 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:681:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘const signed char*’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:686:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)’
+  686 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:686:5: note:   template argument deduction/substitution failed:
+triangle.cpp:27:47: note:   cannot convert ‘t1.Triangle::print_type()’ (type ‘void’) to type ‘const unsigned char*’
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                  ~~~~~~~~~~~~~^~
+/usr/include/c++/14/ostream:807:5: note: candidate: ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)’
+  807 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:807:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/14/ostream: In substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = void]’:
+triangle.cpp:27:48:   required from here
+   27 |     cout << "Triangle type: " << t1.print_type() << endl;
+      |                                                ^
+/usr/include/c++/14/ostream:807:5: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+  807 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
