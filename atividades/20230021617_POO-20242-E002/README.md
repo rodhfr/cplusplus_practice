@@ -1,32 +1,25 @@
-# todo
-cada dispositivo possui características próprias, mas compartilha
-funcionalidades comuns com outros dispositivos.
+## To-Do List
+- [x] Classe abstrata dispositivo_industrial
+- [x] Classe derivada sensor_temperatura
+    - [x] Implementação de ferramentas básicas como sleep e write/read log
+    - [x] Básico de como manipular threads
+    - [x] Como separar arquivos em .h e .cpp
+- [x] Implementação na main da classe sensor_temperatura
+- [ ] classe controlador_motor
+- [ ] Implementação na main da classe controlador_motor
+- [ ] classe robo_manipulador
+- [ ] Implementação na main da classe robo_manipulador
+- [ ] comportamentos específicos para cada tipo de dispositivo
+- [ ] raw pointers para representar os dispositivos
+- [ ] Gerencie a memória corretamente, liberando recursos no destrutor da classe sistema_controle
+- [ ] instancie diferentes tipos de dispositivos usando new
+- [ ] Adicione-os ao sistema de controle
+- [ ] Demonstre o uso de polimorfismo ao chamar métodos através da classe base
+- [ ] Escrever documentação
+- [ ] Organizar hierarquia de arquivos como a atividade pede (criar uma branch provavelmente)
+- [ ] Relatório breve (máximo 2 páginas) explicando como os conceitos de POO foram aplicados
+- [ ] Criar um sistema de make/makefile ou cmake (aprender algo mais complexo nesse quesito)
 
-modele diferentes dispositivos industriais
-utilizando conceitos de:
-* herança 
-* métodos virtuais
-* métodos virtuais puros
-* classes abstratas
-
-1. Classe Abstrata: `dispositivo_industrial`
-classe abstrata que servirá como base para todos os tipos de dispositivos 
-significado: uma classe abstrata é que utiliza apenas de métodos virtuais puros
-1.2 dispositivo_industrial contém os seguintes atributos:
-* `string id` // identificador único do dispositivo
-* `bool status` // indica se o dispositivo está ligado ou desligado
-* `double temperatura` // temperatura atual do dispositivo
-1.3 `dispositivo_industrial` contém os seguintes métodos públicos:
-* Getters e Setters para atributos
-* Método virtual `verificar_seguranca()` // retorna um booleano indicando se 
-o dispositivo está operando em condições seguras.
-* Método virtual puro `iniciar()` // coloca o dispositivo em funcionamento
-* Método virtual puro `gerar_relatorio()` // retorna uma string com informações 
-sobre o estado atual do dispositivo
-* Destrutor virtual 
-
-2. Classes Concretas
-2.1 `sensor_temperatura`
 
 
 
